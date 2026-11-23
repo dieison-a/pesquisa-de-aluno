@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="cartao">
+        <h1>Cadastro de alunos</h1>
+
+        <form action="pesquisaAluno.php" method="post">
+            <p>Dados dos alunos:</p>
+            <label for="matricula1">Matrícula do aluno 1:</label>
+            <input type="number" name="matricula1" id="matricula1" required />
+            <label for="nome1">Nome do aluno 1:</label>
+            <input type="text" name="nome1" id="nome1" required />
+            <label for="media1">Média final do aluno 1:</label>
+            <input type="number" name="media1" id="media1" min="0" max="10" step="0.1" required />
+
+            <label for="matricula2">Matrícula do aluno 2:</label>
+            <input type="number" name="matricula2" id="matricula2" required />
+            <label for="nome2">Nome do aluno 2:</label>
+            <input type="text" name="nome2" id="nome2" required />
+            <label for="media2">Média final do aluno 2:</label>
+            <input type="number" name="media2" id="media2" min="0" max="10" step="0.1" required />
+
+            <label for="matricula3">Matrícula do aluno 3:</label>
+            <input type="number" name="matricula3" id="matricula3" required />
+            <label for="nome3">Nome do aluno 3:</label>
+            <input type="text" name="nome3" id="nome3" required />
+            <label for="media3">Média final do aluno 3:</label>
+            <input type="number" name="media3" id="media3" min="0" max="10" step="0.1" required />
+
+            <p>Pesquisa por nome:</p>
+            <label for="nomePesquisa">Nome do aluno para pesquisar:</label>
+            <input type="text" name="nomePesquisa" id="nomePesquisa" required />
+
+            <button type="submit">Pesquisar aluno</button>
+            <button type="reset">Limpar</button>
+        </form>
+    </main>
+</body>
+
+</html>
